@@ -43,7 +43,7 @@
 <h2>How to submit</h2>
 
 <p>
-  Below are 5 challenges, and each challenge describes one function. Your task is to add <i>working</i> versions of these functions into a Replit project (like you learned about in <a href="./0-getting-started.html">Lesson 0</a>). Each function's name should match the prompt so we know which is which.
+  Below are 5 challenges, and each challenge describes one function. Your task is to add <i>working</i> versions of these functions into a single Replit project (like you learned about in <a href="./0-getting-started.html">Lesson 0</a>). Each function's name should match the prompt so we know which is which. Please do not submit several Replits, all functions should be in <i>one</i> Replit. And be sure all code is inside a function, don't just submit random lines of code.
 </p>
 
 <p>
@@ -160,8 +160,7 @@ Movie: Gravity</pre>
 
   <h3>Question 3: hideAndSeekCounter()</h3>
   <blockquote>
-    <p>Write a function <code class="snip">hideAndSeekCounter</code> that takes a <code class="snip">Number</code> argument, <code class="snip">endNum</code>, which will be at least as big as 3.
-  The function should <em>LOG</em> several strings. First, it should count up to the given number starting from 1, with "..." after each number. But on the final number it should add "!" instead. Finally, one last line of "Ready or not, here I come!"
+    <p>Write a function <code class="snip">hideAndSeekCounter</code> that takes a <code class="snip">Number</code> argument, <code class="snip">endNum</code>. The function should <em>LOG</em> several strings. First, it should count up to the given number starting from 1, with "..." after each number. But on the final number it should add "!" instead. Finally, one last line of "Ready or not, here I come!"
     </p>
     <p>See the code examples below.</p>
   </blockquote>
@@ -179,7 +178,7 @@ Movie: Gravity</pre>
       <tr>
         <td>endNum</td>
         <td>Number</td>
-        <td>A number greater than 2</td>
+        <td>A number greater than 0</td>
       </tr>
     </tbody>
   </table>
@@ -188,11 +187,22 @@ Movie: Gravity</pre>
     <aside>
       <h2 class="aside-header">Example Code</h2>
       <hr />
-      <pre><code class="language-js">hideAndSeekCounter(4)</code></pre>
+      <pre><code class="language-js">hideAndSeekCounter(3)</code></pre>
+      <pre class="code-output">1...
+2...
+3!
+Ready or not, here I come!</pre>
+      <pre><code class="language-js">hideAndSeekCounter(6)</code></pre>
       <pre class="code-output">1...
 2...
 3...
-4!
+4...
+5...
+6!
+Ready or not, here I come!</pre>
+
+      <pre><code class="language-js">hideAndSeekCounter(1)</code></pre>
+      <pre class="code-output">1!
 Ready or not, here I come!</pre>
     </aside>
   </div>
@@ -238,6 +248,16 @@ Give me a I!
 Give me a N!
 What's it spell?
 WIN! WIN! WIN!</pre>
+<pre><code class="language-js">cheer('defense')</code></pre>
+<pre class="code-output">Give me a D!
+Give me a E!
+Give me a F!
+Give me a E!
+Give me a N!
+Give me a S!
+Give me a E!
+What's it spell?
+DEFENSE! DEFENSE! DEFENSE!</pre>
     </aside>
   </div>
   <h3>Question 5: betterCheer()</h3>
@@ -255,6 +275,15 @@ Give me an R!
 Give me a Y!
 What's it spell?
 VICTORY! VICTORY! VICTORY!</pre>
+<pre><code class="language-js">betterCheer('winner')</code></pre>
+<pre class="code-output">Give me a W!
+Give me an I!
+Give me an N!
+Give me an N!
+Give me an E!
+Give me an R!
+What's it spell?
+WINNER! WINNER! WINNER!</pre>
 </div>
 
 <hr class="divider" />
